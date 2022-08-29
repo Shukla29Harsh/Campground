@@ -1,0 +1,31 @@
+<% layout('layout/boilerplate') %>
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 col-xl-8 offset-xl-2">
+            <div class="card shadow">
+                <img src="https://media.istockphoto.com/photos/camping-fire-picture-id1310052297?k=20&m=1310052297&s=612x612&w=0&h=2HGAhY-eTSWsgeHO-PWk9YPcDzv6cRh8BlcynRvFUMw="
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <form action="/register" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
